@@ -1,8 +1,207 @@
-.nav .NavRightSection .MenuIcon{
-background-image: url('https://www.google.com.co/intl/es-419/about/products');
-background-repeat: no-repeat;
-background-position: center;
-background-size: contain;
-Width: 26px;
-height: 26px;
-}/*  */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .navRight{
+    width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+nav .navRight a {
+    margin-right: 10px;
+    color: black;
+}
+
+nav .menuIcon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+nav .navRight img {
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* Estilos Main */
+
+main {
+    /*margin-top: 100px; */
+    text-align: center;
+    height: auto;
+}
+
+main .mainLogo {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .mainLogo img {
+    width: 272px;
+}
+
+main .mainInput {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .mainInputContainer {
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #e1e2e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .mainInput input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+    }
+
+main .mainInputContainer:hover{
+    box-shadow: 0 1px 6px 0 #20212447
+}
+
+main .mainInput .searchIcon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+main .mainInput .microphoneIcon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+main .mainInput .camaraIcon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Google_Lens_-_new_logo.png/800px-Google_Lens_-_new_logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    padding: auto;
+    cursor: pointer;
+    margin-inline-start: 5px;
+}
+
+main .mainButton {
+    width: 530px;
+    margin: 0;
+}
+
+main .mainButtons div{
+    display: inline-block;
+}
+
+main .mainButtons button {
+    height: 36px;
+    background-color: #f8f9fa;
+    border: none;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+
+}
+
+main .mainButtons button:hover{
+    border: 1px solid #dadce0;
+    box-shadow: 1px #dadce0;
+    color: #202124;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-flow:column;
+    justify-content: end;
+    }
+
+footer .section2{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer .section1 {
+    position: absolute;
+    bottom: 40px;
+    border-top: 1px solid #e4e4e4;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+footer ul {
+    margin: 10xp;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+footer .footerLeft {
+    justify-content: left;
+}
+
+footer .footerRight {
+    justify-content: right;
+}
+
+footer ul li a, .section1 {
+    margin: 10px;
+    color: #5f6368;
+}
+
+footer ul li a:hover{
+    margin: 10px;
+    color: #5f6368;
+    text-decoration: underline;
+}
